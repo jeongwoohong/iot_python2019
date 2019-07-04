@@ -8,7 +8,7 @@ while True:
     money = int(input("돈을 넣어 주세요:"))
     if money == coffee_price:
         print("커피를 줍니다.")
-        coffee == coffee -1
+        coffee = coffee - 1
     elif money > coffee_price:
         print("거스름돈 %d를 주고 커피를 줍니다." % (money -coffee_price))
         coffee = coffee-1
@@ -19,3 +19,5 @@ while True:
     if coffee == 0:
         print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
         break
+
+    print("프로그램 종료")
